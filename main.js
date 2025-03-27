@@ -18,7 +18,7 @@ const STOPS = [
         lng: 172.6775,
         zoom: 13,
         title: "Cape Reinga",
-        nummer: 1,
+        nr: 1,
         user: "vintiyannick",
     },
     {
@@ -26,7 +26,7 @@ const STOPS = [
         title: "Bay of Islands",
         user: "Ellinnaa",
         lat:-35.183333,
-        long:174.166667,
+        lng:174.166667,
         zoom:11,
     },
     {
@@ -123,7 +123,7 @@ const STOPS = [
         user: "lizzie2911",
         lat: -44.7,
         lng:169.15,
-        zoom: zoom,
+        zoom: 13,
     },
     {
       nr: 17,
