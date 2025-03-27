@@ -6,6 +6,15 @@ let lat = -40.833333;
 let lng = 172.9;
 let zoom = 11;
 
+let stop = {
+    nr: 12,
+    title: "Abel Tasman Nationalpark",
+    user: "benmertens",
+    lat: -40.833333,
+    lng: 172.9,
+    zoom: 11
+};
+
 //Karte initialisieren
 let map = L.map('map').setView([lat, lng], zoom);
 
@@ -26,3 +35,8 @@ marker.bindPopup(`
         <li> Geogr. Länge: ${lng.toFixed(5)}°</li>
     </ul>
 `).openPopup();
+
+console.log("title", course.title);
+console.log("semester", course.semester);
+console.log("stunden", course.stunden);
+console.log+("typ", course.typ);
