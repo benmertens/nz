@@ -59,9 +59,8 @@ article figure>img {
 
 
 #pulldown {
-    position: relative;
-    left: 5%;
-    top: 1em;
+    margin-left: 5%;
+    margin-top: 1em;
 }
 
 
