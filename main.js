@@ -199,14 +199,8 @@ const STOPS = [
     },
 ];
 
-
 //Karte initialisieren
 let map = L.map('map');
-
-
-
-
-
 
 // Overlays definieren
 let overlays = {
@@ -222,16 +216,10 @@ L.control.layers({
     "Etappen": overlays.STOPS,
 }).addTo(map);
 
-
 // Maßstab
 L.control.scale({
     imperial: false,
 }).addTo(map);
-
-
-
-
-
 
 // Hintergrundkarte definieren
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
