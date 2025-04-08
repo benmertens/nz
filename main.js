@@ -219,7 +219,7 @@ L.control.layers({
     "OpenTopoMap": L.tileLayer.provider('OpenTopoMap'),
     "Esri World Imagery": L.tileLayer.provider('Esri.WorldImagery'),
 }, {
-    "Sehenswürdigkeiten": overlays.sights,
+    "Etappen": overlays.STOPS,
 }).addTo(map);
 
 
