@@ -205,10 +205,31 @@ let map = L.map('map');
 
 
 
+
+
+
+// Overlays definieren
+let overlays = {
+    STOPS: L.featureGroup().addTo(map),
+}
+
+// Layercontrol
+L.control.layers({
+    "OpenStreetMap Mapnik": L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map),
+    "OpenTopoMap": L.tileLayer.provider('OpenTopoMap'),
+    "Esri World Imagery": L.tileLayer.provider('Esri.WorldImagery'),
+}, {
+    "Sehenswürdigkeiten": overlays.sights,
+}).addTo(map);
+
+
 // Maßstab
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+
+
 
 
 
